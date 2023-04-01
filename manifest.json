@@ -1,0 +1,24 @@
+{
+    "name": "YouTube TV Web",
+    "version": "1.0",
+    "description": "Access the YouTube TV client from a web browser.",
+    "manifest_version": 2,
+
+    "background": {
+        "scripts": ["scripts/background.js"],
+        "persistent": true
+    },
+
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "YouTube TV Web"
+    },
+
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "tabs",
+        "<all_urls>",
+        "https://youtube.com/tv*"
+    ]
+}
